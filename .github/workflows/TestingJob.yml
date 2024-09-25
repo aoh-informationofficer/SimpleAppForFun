@@ -1,0 +1,33 @@
+name: Unit Test
+
+on:
+  push:
+    branches: "main"
+  pull_request:
+    branches: "main"
+
+jobs:
+  tests: # The jobs name needs to be in the branch rules
+    runs-on: ubuntu-latest
+
+    # we can use straegy and matrix to determine weather which version we want to use for our npm items.
+    # example: node version, or python or npm version so on
+    # matrix means we will want to run all our script with the same versions of install that we are using
+
+    # env are environment variable. (we can use something called github secret if we need to instead as well)
+
+    steps:
+      - name: "Starting to run test"
+        run: echo "Starting test..."
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: "Setup Node.js v16.18"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: "npm clean install"
+        run: npm ci
+      - name: "tests begin"
+        run: npm test
+      - name: "Process Ended"
+        run: echo "Ending test..."

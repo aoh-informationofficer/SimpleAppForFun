@@ -1,0 +1,35 @@
+modules:
+  jira:issueContext:
+    - key: possible-knowledge-base
+      resource: main
+      resolver:
+        function: resolver
+      title: testing_issue_context
+      label: Custom UI
+      displayConditions:
+        issueType: Bug
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
+    - manage:jira-project
+    - manage:jira-configuration
+    - read:jira-user
+    - manage:jira-webhook
+  external:
+    fetch:
+      backend:
+        - https://aocz.atlassian.net
+  content:
+    styles:
+      - unsafe-inline
+app:
+  runtime:
+    name: nodejs20.x
+  id: ari:cloud:ecosystem::app/90abcd0d-7f85-41c9-8fae-83a17cac3b11

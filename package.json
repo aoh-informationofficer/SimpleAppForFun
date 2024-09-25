@@ -1,0 +1,28 @@
+{
+  "name": "jira-issue-context-custom-ui",
+  "version": "1.1.39",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "scripts": {
+    "dev": "cd static/hello-world && npm run build && cd ../.. && forge deploy",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "@forge/api": "^3.9.1",
+    "@forge/resolver": "^1.5.39",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "jest": "^27.5.1",
+    "msw": "^2.4.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "swr": "^2.2.5"
+  }
+}
