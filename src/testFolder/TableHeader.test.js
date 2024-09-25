@@ -1,5 +1,5 @@
 import {render, screen} from '@testing-library/react';
-import TableHeader from './TableHeader';
+import TableHeader from '../../static/hello-world/src/components/TableHeader';
 import '@testing-library/jest-dom'; 
 
 describe('Testing TableHeader component', () => {

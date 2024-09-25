@@ -1,4 +1,3 @@
-import ApiController from './ApiController';
 import { api } from '@forge/api';
 import '@testing-library/jest-dom';
 

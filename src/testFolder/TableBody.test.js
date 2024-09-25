@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import TableBody from './TableBody';
+import TableBody from '../../static/hello-world/src/components/TableBody';
 import { invoke } from '@forge/bridge';
 
 // Mock the Forge API

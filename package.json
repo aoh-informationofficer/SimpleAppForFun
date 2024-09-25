@@ -10,10 +10,12 @@
   },
   "scripts": {
     "dev": "cd static/hello-world && npm run build && cd ../.. && forge deploy",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "testC": "cd static/hello-world"
   },
   "dependencies": {
     "@forge/api": "^3.9.1",
+    "@forge/bridge": "^3.5.0",
     "@forge/resolver": "^1.5.39",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Title from './Title';
+import Title from '../../static/hello-world/src/components/Title';
 import '@testing-library/jest-dom'; 
 
 describe('Title Component', () => {
