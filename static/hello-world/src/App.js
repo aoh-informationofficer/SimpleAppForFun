@@ -3,6 +3,7 @@ import { invoke } from '@forge/bridge';
 import './globalStyle.css';
 import Title from './components/Title';
 import TableHeader from './components/TableHeader';
+import TableBody from './components/TableBody';
 
 function App() {
   const [data, setData] = useState(null);
