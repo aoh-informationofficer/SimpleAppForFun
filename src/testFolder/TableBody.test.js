@@ -28,7 +28,7 @@ describe('Testing TableBody Component', () => {
     
     // Check if both rows are rendered
     const rows = await screen.findAllByRole('row');
-    expect(rows).toHaveLength(3); // 2 rows
+    expect(rows).toHaveLength(2); // 2 rows
 
     // Check if the correct titles are rendered
     const firstLink = await screen.findByText('How to update jira ticket');
